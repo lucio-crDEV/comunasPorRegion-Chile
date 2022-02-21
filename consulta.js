@@ -1,6 +1,6 @@
 // Consulta que genera arreglo de comunas por región
-// Se debe cambiar la query segun la documentación para obtener datos deseados. Fuente: https://apis.digital.gob.cl/dpa
-/* import fetch from 'node-fetch'; */
+// Se debe cambiar la query segun la documentación para obtener datos deseados. 
+// Fuente: https://apis.digital.gob.cl/dpa
 
 // [----------- DATA -----------------]
 // 'ID: 01 - Región: Tarapacá',
@@ -21,17 +21,18 @@
 // 'ID: 16 - Región: Ñuble' 
 // [-------------------------------------------------]
 
+import fetch from 'node-fetch';
 
 // Implementación (reemplazar id)
 // .../regiones/:id -> Para consultar Región
 // .../regiones/:id/comunas -> Para consultar comunas por región
-/* const id = 16
+const id ="10"
 const urlRegion = `https://apis.digital.gob.cl/dpa/regiones/${id}`;
 const urlComunas = `https://apis.digital.gob.cl/dpa/regiones/${id}/comunas`;
 
 fetch(urlRegion)
-    .then(response => response.json())
-    .then(region => console.log(`Región: ${region.nombre}`))
+.then(response => response.json())
+.then(region => console.log(`Región: ${region.nombre}`))
     .catch(e => console.log(e))
 
 fetch(urlComunas)
@@ -43,4 +44,3 @@ fetch(urlComunas)
         console.log(`\n` + "Cantidad de comunas: " + acum.length)
     })
     .catch(e => console.log(e))
-     */
