@@ -1,17 +1,13 @@
 // Función para obtener los códigos de las regiones
 function obtenerCodigosRegiones(regiones) {
     var codigos = [];
-  
     for (var i = 0; i < regiones.length; i++) {
       var region = regiones[i];
       codigos.push(region.codigo);
     }
-  
     return codigos;
   }
-  
   const urlRegiones = "https://apis.digital.gob.cl/dpa/regiones";
-  
   fetch(urlRegiones)
     .then(response => response.json())
     .then(regiones => {
@@ -41,4 +37,3 @@ function obtenerCodigosRegiones(regiones) {
       });
     })
     .catch(e => console.log(e));
-  
