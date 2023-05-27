@@ -13,10 +13,8 @@ fetch(urlRegiones)
   .then(regiones => {
     // Obtener los códigos de las regiones
     var codigosRegiones = obtenerCodigosRegiones(regiones);
-
     // Imprimir una respuesta por cada código de región
-    console.log("Respuestas por cada código de región:");
-
+    console.log("Comunas por región:");
     codigosRegiones.forEach(codigo => {
       const urlComunas = urlRegiones + "/" + codigo + "/comunas";
       let acum = [];
