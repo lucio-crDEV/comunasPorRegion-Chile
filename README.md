@@ -15,8 +15,7 @@ Este script de Node.js muestra una tabla con las regiones de Chile y la lista de
 3. Ejecuta el siguiente comando para instalar las dependencias:
 
    ```
-   npm init -y
-   npm install
+   npm init -y && npm install
    ```
 
 ## Uso
