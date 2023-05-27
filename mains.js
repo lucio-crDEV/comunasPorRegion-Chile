@@ -35,8 +35,7 @@ function obtenerCodigosRegiones(regiones) {
             }
             console.log(`Comunas: " ${acum} "`);
             console.log(`Cantidad de comunas: ${acum.length}`);
-  
-            // Agrega aquí la lógica adicional que desees ejecutar para cada código de región
+
           })
           .catch(e => console.log(e));
       });
